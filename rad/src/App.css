@@ -9,6 +9,9 @@
 
 .App {
   text-align: center;
+  background-image: url(./Images/pattern2.jpg);
+  background-repeat: repeat ;
+  /* background-position: center center; */
 }
 
 .App-logo {
@@ -23,7 +26,7 @@
 }
 
 .App-header {
-  background-image: url('./Images/carpet-pattern.jpg');
+  background-image: url("./Images/carpet-pattern.jpg");
   background-color: #282c34;
   min-height: 20vh;
   display: flex;
@@ -39,7 +42,7 @@
   font-family: RockSalt-Regular;
   font-size: 5rem;
   /* color: purple; */
-  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: black;
 }
 
@@ -54,5 +57,10 @@
   to {
     transform: rotate(60deg);
   }
-
 }
+
+/* main {
+background-image: url(./Images/pattern3.png) url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
+background-repeat: repeat no-repeat;
+background-position: center center;
+} */
