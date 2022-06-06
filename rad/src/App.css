@@ -7,10 +7,15 @@
   src: url(./Fonts/RockSalt-Regular.ttf);
 }
 
+.Top-App {
+  background-color: black;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
   background-image: url(./Images/pattern2.jpg);
-  background-repeat: repeat ;
+  background-repeat: repeat;
   /* background-position: center center; */
 }
 
@@ -41,12 +46,17 @@
   from {
     transform: rotate(0deg) translate(70%, 100%);
   }
-  20%{ transform: rotate(5deg) translate(60%, 90%);}
-  20%{ transform: rotate(10deg) translate(50%, 80%);}
-  60% {transform: rotate(90deg) translate(10%, 40%);}
+  20% {
+    transform: rotate(5deg) translate(60%, 90%);
+  }
+  20% {
+    transform: rotate(10deg) translate(50%, 80%);
+  }
+  60% {
+    transform: rotate(90deg) translate(10%, 40%);
+  }
   80% {
     transform: rotate(180deg) translate(0);
-
   }
   100% {
     transform: rotate(360deg) translate(0);
@@ -62,6 +72,23 @@
   }
 }
 
+@keyframes bye {
+  0% {
+    transform: rotate(0deg) scale(100%);
+  }
+  100% {
+    transform: rotate(360deg) scale(0%);
+  }
+}
+
+@keyframes pt3-text {
+  0% { color: tomato;}
+  50% { color: turquoise;}
+  100% {color: palevioletred;}
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 1s alternate;
@@ -73,15 +100,20 @@
     animation: do-a-flip infinite 1s linear;
   }
   .skateboarder-faster {
-    animation: spin infinite .5s linear;
+    animation: spin infinite 0.3s linear;
   }
   .skateboarder-even-faster {
-    animation: spin infinite .2s linear;
+    animation: spin infinite 0.1s linear;
   }
   .skateboarder-oh-no-faster {
-    animation: spin infinite .05s linear;
+    animation: spin infinite 0.05s linear;
   }
-  
+  /* .app-what-have-you-done {
+    animation: bye 2s forwards;
+  }
+  .what-have-you-done-text-pt3 {
+    animation: pt3-text infinite .5s alternate;
+  } */
 }
 
 .App-header {
@@ -123,16 +155,42 @@
   align-items: center;
   justify-content: center;
 }
+/* .what-have-you-done {
+  height: 100vh;
+  width: 100vw;
+  padding: 0%;
+  font-family: RockSalt-Regular;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-content: center; */
+  /* align-self: center;
+  align-items: center;
+}
+.what-have-you-done-text-pt3 {
+  margin: 0%;
+}
+.what-have-you-done-text-button {
+  margin-left: auto;
+  margin-right: auto;
+align-self: center;
+} */
+
+button {
+  background-color: purple;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 5px;
+  font-family: GloriaHallelujah-Regular;
+  font-size: larger;
+  color: #c2d4f8;
+}
 /* .Body {
   background-image: url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
   background-position: center;
   background-size: 50vh;
   background-repeat: no-repeat;
 } */
-
-
-
-
 
 /* main {
 background-image: url(./Images/pattern3.png) url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
