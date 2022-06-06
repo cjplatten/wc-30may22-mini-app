@@ -6,7 +6,8 @@ import glitterText from "../Images/glitter-text.gif";
 import woah from "../Images/woah.webp";
 import SkateTricks from "./SkateTricks";
 
-const Body = () => {
+const Body = (props) => {
+  const { setAppClass } = props;
   return (
     <main className="Body">
       <img
@@ -15,7 +16,7 @@ const Body = () => {
         alt="hella radical"
       />
       <img src={goodVibes} className="good-vibes" alt="good vibes" />
-      <SkateTricks />
+      <SkateTricks setAppClass={setAppClass} />
       <img src={woah} className="woah" alt="woah" />
       <img src={hellaRadical} className="hella-radical" alt="hella radical" />
       <img src={glitterText} className="Body" alt="glitter text" />

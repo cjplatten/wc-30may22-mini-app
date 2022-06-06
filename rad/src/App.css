@@ -108,12 +108,12 @@
   .skateboarder-oh-no-faster {
     animation: spin infinite 0.05s linear;
   }
-  /* .app-what-have-you-done {
+  .app-what-have-you-done {
     animation: bye 2s forwards;
   }
   .what-have-you-done-text-pt3 {
     animation: pt3-text infinite .5s alternate;
-  } */
+  }
 }
 
 .App-header {
@@ -155,7 +155,7 @@
   align-items: center;
   justify-content: center;
 }
-/* .what-have-you-done {
+.what-have-you-done {
   height: 100vh;
   width: 100vw;
   padding: 0%;
@@ -163,18 +163,18 @@
   font-size: larger;
   display: flex;
   flex-direction: column;
-  align-content: center; */
-  /* align-self: center;
+  /* align-content: center; */
+  /* align-self: center; */
   align-items: center;
 }
 .what-have-you-done-text-pt3 {
   margin: 0%;
 }
 .what-have-you-done-text-button {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 align-self: center;
-} */
+}
 
 button {
   background-color: purple;
