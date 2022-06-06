@@ -19,10 +19,69 @@
   pointer-events: none;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes ready {
+  from {
+    transform: rotate(0deg) translate(70%, 100%);
+  }
+  to {
+    transform: rotate(0deg) translate(70%, 100%);
+  }
+}
+
+@keyframes do-a-flip {
+  from {
+    transform: rotate(0deg) translate(70%, 100%);
+  }
+  20%{ transform: rotate(5deg) translate(60%, 90%);}
+  20%{ transform: rotate(10deg) translate(50%, 80%);}
+  60% {transform: rotate(90deg) translate(10%, 40%);}
+  80% {
+    transform: rotate(180deg) translate(0);
+
+  }
+  100% {
+    transform: rotate(360deg) translate(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 1s alternate;
   }
+  .skateboarder-ready {
+    animation: ready infinite 1s linear;
+  }
+  .skateboarder-flip {
+    animation: do-a-flip infinite 1s linear;
+  }
+  .skateboarder-faster {
+    animation: spin infinite .5s linear;
+  }
+  .skateboarder-even-faster {
+    animation: spin infinite .2s linear;
+  }
+  .skateboarder-oh-no-faster {
+    animation: spin infinite .05s linear;
+  }
+  
 }
 
 .App-header {
@@ -50,14 +109,30 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(-20deg);
-  }
-  to {
-    transform: rotate(60deg);
-  }
+.skateboarder {
+  max-width: 40vh;
+  align-self: center;
 }
+
+.ramp {
+  max-width: 50vw;
+  max-height: 40vh;
+}
+.skate-tricks {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+/* .Body {
+  background-image: url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
+  background-position: center;
+  background-size: 50vh;
+  background-repeat: no-repeat;
+} */
+
+
+
+
 
 /* main {
 background-image: url(./Images/pattern3.png) url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
