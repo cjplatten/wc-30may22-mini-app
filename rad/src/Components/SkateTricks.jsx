@@ -26,6 +26,9 @@ const SkateTricks = (props) => {
   }
   function whatHaveYouDone() {
     setAppClass("app-what-have-you-done");
+    setTimeout(() => {
+        setAppClass('app-disappear')
+    }, 3000);
   }
 
   let buttons;

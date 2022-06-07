@@ -9,7 +9,8 @@
 
 .Top-App {
   background-color: black;
-  height: 100vh;
+  height: fit-content;
+  
 }
 
 .App {
@@ -82,12 +83,16 @@
 }
 
 @keyframes pt3-text {
-  0% { color: tomato;}
-  50% { color: turquoise;}
-  100% {color: palevioletred;}
+  0% {
+    color: tomato;
+  }
+  50% {
+    color: turquoise;
+  }
+  100% {
+    color: palevioletred;
+  }
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -112,7 +117,10 @@
     animation: bye 2s forwards;
   }
   .what-have-you-done-text-pt3 {
-    animation: pt3-text infinite .5s alternate;
+    animation: pt3-text infinite 0.5s alternate;
+  }
+  .app-come-back {
+    animation: bye 2s reverse forwards;
   }
 }
 
@@ -161,10 +169,9 @@
   padding: 0%;
   font-family: RockSalt-Regular;
   font-size: larger;
-  display: flex;
-  flex-direction: column;
-  /* align-content: center; */
-  /* align-self: center; */
+  display: grid;
+  align-content: center;
+  justify-items: center;
   align-items: center;
 }
 .what-have-you-done-text-pt3 {
@@ -173,7 +180,7 @@
 .what-have-you-done-text-button {
   /* margin-left: auto;
   margin-right: auto; */
-align-self: center;
+  align-self: center;
 }
 
 button {
@@ -185,11 +192,43 @@ button {
   font-size: larger;
   color: #c2d4f8;
 }
-/* .Body {
-  background-image: url(./Images/small-skate-ramp-pbr-textures-01.jpeg);
-  background-position: center;
-  background-size: 50vh;
-  background-repeat: no-repeat;
+/* 
+.Body {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+
+  grid-template-areas:
+    "rad-trees" "skate-tricks" "good-vibes"
+    "woah" "skate-tricks" "hella"
+    "glitter text" "glitter text" "glitter text";
+}
+
+.hella-rad-trees {
+  grid-area: rad-trees;
+  height: fit-content;
+}
+
+.good-vibes {
+  grid-area: good-vibes;
+}
+
+.woah {
+  grid-area: woah;
+}
+
+.hella-radical {
+  grid-area: hella;
+}
+
+.glitter-text {
+  grid-area: glitter;
+}
+
+.skate-tricks {
+  grid-area: skate-tricks;
 } */
 
 /* main {

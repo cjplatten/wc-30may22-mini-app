@@ -9,15 +9,16 @@ function App() {
   console.log(appClass);
   return (
     <div className="Top-App">
+      {(
+        // appClass === "app-what-have-you-done" ||
+        appClass === "app-disappear") && (
+        <WhatHaveYouDone setAppClass={setAppClass} appClass={appClass} />
+      )}
       {appClass !== "app-disappear" && (
         <section className={`App ${appClass}`}>
           <Header />
           <Body setAppClass={setAppClass} />
         </section>
-      )}
-      {(appClass === "app-what-have-you-done" ||
-        appClass === "app-disappear") && (
-        <WhatHaveYouDone setAppClass={setAppClass} appClass={appClass} />
       )}
     </div>
   );
