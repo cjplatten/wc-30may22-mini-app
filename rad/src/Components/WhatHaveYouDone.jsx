@@ -25,6 +25,9 @@ const WhatHaveYouDone = (props) => {
     }
     if (buttonClass === "4") {
       setAppClass('app-come-back');
+      setTimeout(() => {
+        setAppClass('')
+    }, 2200);
     }
   }
 

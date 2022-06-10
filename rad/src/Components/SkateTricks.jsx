@@ -30,7 +30,6 @@ const SkateTricks = (props) => {
         setAppClass('app-disappear')
     }, 3000);
   }
-
   let buttons;
   if (skateboarderClass === "skateboarder-ready") {
     buttons = <button onClick={doAFlip}>Do a flip</button>;
